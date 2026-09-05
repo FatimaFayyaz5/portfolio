@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fatima Fayyaz — The Art of Data</title>
+  <title>Fatima Fayyaz — Portfolio</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <link rel="stylesheet" href="style.css">
@@ -22,7 +22,7 @@
   <nav class="editorial-nav">
     <div class="nav-brand">FATIMA<span class="yellow-text">.</span></div>
     <ul class="nav-links">
-      <li><a href="#about" data-hover="ABOUT">ABOUT</a></li>
+      <li><a href="#hero" data-hover="HOME">HOME</a></li>
       <li><a href="#skills" data-hover="SKILLS">SKILLS</a></li>
       <li><a href="#projects" data-hover="WORK">WORK</a></li>
       <li><a href="#contact" data-hover="CONTACT">CONTACT</a></li>
@@ -30,21 +30,20 @@
     <div class="nav-menu-btn">MENU</div>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (COVER PAGE) -->
   <header id="hero" class="hero-section">
     <div class="hero-grid">
       <div class="hero-text-content">
         <p class="eyebrow reveal-up">PORTFOLIO // 2026</p>
-        <!-- Font sizes reduced slightly per request -->
+        
         <h1 class="massive-title reveal-up" style="transition-delay: 0.1s;">
-          <span class="outline-text">THE ART</span><br>
-          <span class="outline-text">OF</span><br>
-          <span class="yellow-text">DATA</span><br>
-          SCIENCE
+          <span class="outline-text">FATIMA</span><br>
+          <span class="yellow-text">FAYYAZ.</span>
         </h1>
+        
         <div class="hero-roles reveal-up" style="transition-delay: 0.2s;">
-          <p>I am a <span id="typed-text" class="yellow-text"></span><span class="typing-cursor">|</span></p>
-          <p class="minimal-desc">Translating complex numbers into beautiful, actionable realities.</p>
+          <h2 class="hero-subtitle">DATA SCIENTIST & ML ENGINEER</h2>
+          <p class="minimal-desc">I engineer complex data into intelligent, scalable solutions that drive real-world impact. <br><br><span style="color: var(--accent-yellow);">Scroll to open the catalog ↓</span></p>
         </div>
       </div>
       <div class="hero-visual reveal-scale">
@@ -55,228 +54,211 @@
         </div>
       </div>
     </div>
-    
-    <div class="scroll-marquee">
-      <div class="marquee-content">
-        <span>DATA SCIENTIST</span> <span class="separator">/</span>
-        <span>ML ENGINEER</span> <span class="separator">/</span>
-        <span>AI ENTHUSIAST</span> <span class="separator">/</span>
-        <span>DATA SCIENTIST</span> <span class="separator">/</span>
-        <span>ML ENGINEER</span> <span class="separator">/</span>
-        <span>AI ENTHUSIAST</span> <span class="separator">/</span>
-      </div>
-    </div>
   </header>
 
-  <!-- VIDEO SECTION -->
-  <section id="video" class="video-section">
-    <div class="section-header reveal-up">
-      <h2 class="medium-heading">PRESS <span class="yellow-text">PLAY</span></h2>
-      <p class="sub-heading">A brief introduction to my work and vision.</p>
-    </div>
+  <!-- MAGAZINE WRAPPER (SLIDES OVER THE HERO) -->
+  <div class="magazine-wrapper">
     
-    <div class="video-wrapper reveal-scale">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=1" 
-              title="Professional Intro" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-      </iframe>
-      <div class="video-overlay">
-        <div class="play-button"><i class="fas fa-play"></i></div>
+    <!-- VIDEO SECTION -->
+    <section id="video" class="magazine-section video-section">
+      <div class="section-header reveal-up">
+        <h2 class="magazine-heading">PRESS <span class="highlight-yellow">PLAY</span></h2>
+        <p class="magazine-sub">A brief introduction to my work and vision.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="skills-section">
-    <div class="section-header reveal-up">
-      <h2 class="medium-heading">MY <span class="yellow-text">SKILLS</span></h2>
-    </div>
-    <div class="skills-grid">
-      <!-- Skill 1 -->
-      <div class="skill-card reveal-up">
-        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-        <h3>Mobile & Web</h3>
-        <div class="skill-tags">
-          <span class="tag">Flutter</span>
-          <span class="tag">Dart</span>
-          <span class="tag">Provider</span>
-          <span class="tag">HTML/CSS/JS</span>
-        </div>
-      </div>
-      <!-- Skill 2 -->
-      <div class="skill-card reveal-up">
-        <div class="skill-icon"><i class="fas fa-robot"></i></div>
-        <h3>AI & LLMs</h3>
-        <div class="skill-tags">
-          <span class="tag">RAG Pipelines</span>
-          <span class="tag">Prompt Engineering</span>
-          <span class="tag">TF-IDF</span>
-          <span class="tag">Groq API</span>
-          <span class="tag">Gemini API</span>
-        </div>
-      </div>
-      <!-- Skill 3 -->
-      <div class="skill-card reveal-up">
-        <div class="skill-icon"><i class="fas fa-code"></i></div>
-        <h3>Programming</h3>
-        <div class="skill-tags">
-          <span class="tag">Python</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">Git</span>
-        </div>
-      </div>
-      <!-- Skill 4 -->
-      <div class="skill-card reveal-up">
-        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-        <h3>Data & BI</h3>
-        <div class="skill-tags">
-          <span class="tag">Power BI</span>
-          <span class="tag">DAX</span>
-          <span class="tag">Power Query</span>
-          <span class="tag">Star Schema</span>
-        </div>
-      </div>
-      <!-- Skill 5 -->
-      <div class="skill-card reveal-up">
-        <div class="skill-icon"><i class="fas fa-server"></i></div>
-        <h3>Backend & DevOps</h3>
-        <div class="skill-tags">
-          <span class="tag">Supabase</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">PostGIS</span>
-          <span class="tag">REST APIs</span>
-          <span class="tag">Vercel</span>
-        </div>
-      </div>
-      <!-- Skill 6 -->
-      <div class="skill-card reveal-up">
-        <div class="skill-icon"><i class="fas fa-brain"></i></div>
-        <h3>Foundations</h3>
-        <div class="skill-tags">
-          <span class="tag">Linear Algebra</span>
-          <span class="tag">Probability</span>
-          <span class="tag">Statistics</span>
-          <span class="tag">Optimization</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION (GRID) -->
-  <section id="projects" class="projects-section">
-    <div class="section-header reveal-up">
-      <h2 class="medium-heading">SELECTED <span class="yellow-text">WORKS</span></h2>
-    </div>
-
-    <div class="projects-grid">
       
-      <!-- Project 01 -->
-      <div class="project-card reveal-up">
-        <div class="project-image">🦋</div>
-        <div class="project-content">
-          <h3>WInDrive</h3>
-          <p>Women-Only Ride-Hailing Platform. PostGIS driver matching, offline-first architecture, $0/month scale.</p>
-          <div class="project-tags">
-            <span class="tag">Flutter</span><span class="tag">Supabase</span><span class="tag">PostGIS</span>
+      <div class="video-wrapper reveal-scale">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=1" 
+                title="Professional Intro" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+        <div class="video-overlay">
+          <div class="play-button"><i class="fas fa-play"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="magazine-section skills-section">
+      <div class="section-header reveal-up">
+        <h2 class="magazine-heading">TECHNICAL <span class="highlight-yellow">ARSENAL</span></h2>
+      </div>
+      <div class="skills-catalog-grid">
+        <!-- Skill 1 -->
+        <div class="catalog-skill-card reveal-up">
+          <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile & Web</h3>
+          <div class="skill-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">Provider</span>
+            <span class="tag">HTML/CSS</span>
           </div>
-          <div class="project-links">
-            <a href="https://windrive.vercel.app" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+        <!-- Skill 2 -->
+        <div class="catalog-skill-card reveal-up">
+          <div class="skill-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI & LLMs</h3>
+          <div class="skill-tags">
+            <span class="tag">RAG Pipelines</span>
+            <span class="tag">Prompt Eng</span>
+            <span class="tag">TF-IDF</span>
+            <span class="tag">Groq API</span>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="catalog-skill-card reveal-up">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="catalog-skill-card reveal-up">
+          <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Data & BI</h3>
+          <div class="skill-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Power Query</span>
+            <span class="tag">Star Schema</span>
+          </div>
+        </div>
+        <!-- Skill 5 -->
+        <div class="catalog-skill-card reveal-up">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Supabase</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">PostGIS</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <!-- Skill 6 -->
+        <div class="catalog-skill-card reveal-up">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <h3>Foundations</h3>
+          <div class="skill-tags">
+            <span class="tag">Linear Algebra</span>
+            <span class="tag">Probability</span>
+            <span class="tag">Statistics</span>
+            <span class="tag">Optimization</span>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Project 02 -->
-      <div class="project-card reveal-up">
-        <div class="project-image">🤖</div>
-        <div class="project-content">
-          <h3>Mind Power Artists</h3>
-          <p>AI Knowledge Chatbot. RAG pipeline feeding TF-IDF retrieval to ground LLM answers in live company data.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">RAG</span><span class="tag">Groq API</span>
+    <!-- PROJECTS SECTION (CATALOG STYLE) -->
+    <section id="projects" class="magazine-section projects-section">
+      <div class="section-header reveal-up">
+        <h2 class="magazine-heading">SELECTED <span class="highlight-yellow">WORKS</span></h2>
+      </div>
+
+      <div class="catalog-layout">
+        
+        <!-- Project 01 -->
+        <div class="catalog-project reveal-up">
+          <div class="catalog-left">
+            <div class="catalog-number">01</div>
+            <div class="catalog-visual">🦋</div>
           </div>
-          <div class="project-links">
-            <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+          <div class="catalog-right">
+            <h3 class="catalog-title">WInDrive</h3>
+            <div class="catalog-divider"></div>
+            <p>Women-Only Ride-Hailing Platform. Built with a robust PostGIS driver matching system, offline-first architecture, and a highly scalable $0/month infrastructure.</p>
+            <div class="catalog-tags">
+              <span class="tag">Flutter</span><span class="tag">Supabase</span><span class="tag">PostGIS</span>
+            </div>
+            <a href="https://windrive.vercel.app" target="_blank" class="catalog-btn">LIVE DEMO <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
-      </div>
 
-      <!-- Project 03 -->
-      <div class="project-card reveal-up">
-        <div class="project-image">📊</div>
-        <div class="project-content">
-          <h3>AdventureWorks BI</h3>
-          <p>Executive Analytics Dashboard. 13-table star schema modelling 2.5 years of $24.9M transaction data.</p>
-          <div class="project-tags">
-            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Star Schema</span>
+        <!-- Project 02 -->
+        <div class="catalog-project reveal-up">
+          <div class="catalog-left">
+            <div class="catalog-number">02</div>
+            <div class="catalog-visual">🤖</div>
           </div>
-          <div class="project-links">
-            <a href="#" class="btn"><i class="fas fa-images"></i> Dashboard</a>
+          <div class="catalog-right">
+            <h3 class="catalog-title">Mind Power Artists</h3>
+            <div class="catalog-divider"></div>
+            <p>AI Knowledge Chatbot featuring a custom RAG pipeline. Utilizes TF-IDF retrieval to securely ground Large Language Model answers in proprietary company data.</p>
+            <div class="catalog-tags">
+              <span class="tag">Python</span><span class="tag">RAG</span><span class="tag">Groq API</span>
+            </div>
+            <a href="#" class="catalog-btn">GITHUB <i class="fab fa-github"></i></a>
           </div>
         </div>
-      </div>
 
-      <!-- Project 04 -->
-      <div class="project-card reveal-up">
-        <div class="project-image">🔬</div>
-        <div class="project-content">
-          <h3>ML Research</h3>
-          <p>Supervised and unsupervised learning models focusing on feature engineering and evaluation metrics.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">Scikit-Learn</span><span class="tag">Pandas</span>
+        <!-- Project 03 -->
+        <div class="catalog-project reveal-up">
+          <div class="catalog-left">
+            <div class="catalog-number">03</div>
+            <div class="catalog-visual">📊</div>
           </div>
-          <div class="project-links"><span class="coming-soon">Coming Soon</span></div>
-        </div>
-      </div>
-
-      <!-- Project 05 -->
-      <div class="project-card reveal-up">
-        <div class="project-image">📱</div>
-        <div class="project-content">
-          <h3>UX Case Study</h3>
-          <p>Product design from information architecture to hi-fi interactive prototypes based on design principles.</p>
-          <div class="project-tags">
-            <span class="tag">UX Design</span><span class="tag">Wireframing</span><span class="tag">Prototyping</span>
+          <div class="catalog-right">
+            <h3 class="catalog-title">AdventureWorks BI</h3>
+            <div class="catalog-divider"></div>
+            <p>Executive Analytics Dashboard. Modelled 13 tables into a high-performance star schema over 2.5 years of transactions ($24.9M revenue).</p>
+            <div class="catalog-tags">
+              <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Star Schema</span>
+            </div>
+            <a href="#" class="catalog-btn">DASHBOARD <i class="fas fa-images"></i></a>
           </div>
-          <div class="project-links"><span class="coming-soon">Coming Soon</span></div>
         </div>
-      </div>
 
-      <!-- Project 06 -->
-      <div class="project-card reveal-up">
-        <div class="project-image">⚡</div>
-        <div class="project-content">
-          <h3>DSA Portfolio</h3>
-          <p>100+ data structures and algorithms problems solved with time/space complexity analysis.</p>
-          <div class="project-tags">
-            <span class="tag">Algorithms</span><span class="tag">Data Structures</span><span class="tag">Python</span>
+        <!-- Project 04 -->
+        <div class="catalog-project reveal-up">
+          <div class="catalog-left">
+            <div class="catalog-number">04</div>
+            <div class="catalog-visual">🔬</div>
           </div>
-          <div class="project-links"><span class="coming-soon">Coming Soon</span></div>
+          <div class="catalog-right">
+            <h3 class="catalog-title">ML Research</h3>
+            <div class="catalog-divider"></div>
+            <p>Applied machine learning models to real-world datasets with a deep focus on feature engineering, model selection, and evaluation metrics.</p>
+            <div class="catalog-tags">
+              <span class="tag">Python</span><span class="tag">Scikit-Learn</span><span class="tag">Pandas</span>
+            </div>
+            <span class="catalog-muted">COMING SOON</span>
+          </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <footer id="contact" class="editorial-footer reveal-up">
-    <div class="footer-huge-text">
-      <h2 class="medium-heading">LET'S <span class="yellow-text">TALK</span></h2>
-    </div>
-    <div class="footer-content">
-      <div class="contact-info">
-        <!-- Phone number removed for privacy as requested -->
-        <a href="mailto:fatimafayyazn22@gmail.com" class="contact-link">fatimafayyazn22@gmail.com</a>
       </div>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/fatima-fayyaz-nust" target="_blank" data-hover="LINKEDIN">LINKEDIN</a>
-        <a href="https://github.com/FatimaFayyaz5" target="_blank" data-hover="GITHUB">GITHUB</a>
+    </section>
+
+  </div> <!-- End Magazine Wrapper -->
+
+  <!-- BACK COVER FOOTER -->
+  <footer id="contact" class="back-cover-footer reveal-up">
+    <div class="footer-grid">
+      <div class="footer-left">
+        <h2 class="magazine-heading-white">LET'S <span class="highlight-yellow">TALK</span></h2>
+        <p class="footer-desc">Open for opportunities, collaborations, and conversations.</p>
+      </div>
+      <div class="footer-right">
+        <div class="contact-card">
+          <div class="contact-item">
+            <i class="fas fa-envelope icon-accent"></i>
+            <!-- Email is now in lowercase as requested -->
+            <a href="mailto:fatimafayyazn22@gmail.com" class="lowercase-email">fatimafayyazn22@gmail.com</a>
+          </div>
+          <div class="social-icons-row">
+            <a href="https://github.com/FatimaFayyaz5" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/fatima-fayyaz-nust" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:fatimafayyazn22@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 FATIMA FAYYAZ. ALL RIGHTS RESERVED.</p>
+      <p>&copy; 2026 Fatima Fayyaz. All Rights Reserved.</p>
     </div>
   </footer>
 

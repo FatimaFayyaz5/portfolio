@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Typing Effect (Updated Strings)
     const typedTextSpan = document.querySelector('#typed-text');
     if (typedTextSpan) {
-        const textArray = ['DATA SCIENTIST', 'ML ENGINEER', 'AI ENTHUSIAST', 'VISIONARY'];
+        const textArray = ['DATA SCIENTIST', 'ML ENGINEER', 'AI ENTHUSIAST', 'VISIONARY', 'VISIONARY'];
         const typingDelay = 100;
         const erasingDelay = 50;
         const newTextDelay = 2000;
@@ -106,3 +106,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale');
     revealElements.forEach(el => observer.observe(el));
 });
+
