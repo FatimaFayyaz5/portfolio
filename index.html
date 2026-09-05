@@ -3,536 +3,249 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fatima Fayyaz — Portfolio</title>
-  <meta name="description" content="Fatima Fayyaz — Software Engineer, Flutter Developer, AI Enthusiast. Building full-stack apps, AI tools, and data-driven dashboards.">
-  <meta property="og:title" content="Fatima Fayyaz — Portfolio">
-  <meta property="og:description" content="Software Engineer · Flutter Developer · AI Enthusiast">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#000000">
+  <title>Fatima Fayyaz — The Art of Data</title>
+  
+  <!-- Editorial Fonts: Syne for heavy display, Inter for readable body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ══════════ NAVIGATION ══════════ -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">F<span class="accent">.</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <!-- Custom GenZ/Editorial Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="editorial-nav">
+    <div class="nav-brand">FATIMA<span class="yellow-text">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about" data-hover="ABOUT">ABOUT</a></li>
+      <li><a href="#video" data-hover="INTRO">INTRO</a></li>
+      <li><a href="#projects" data-hover="WORK">WORK</a></li>
+      <li><a href="#contact" data-hover="CONTACT">CONTACT</a></li>
+    </ul>
+    <div class="nav-menu-btn">MENU</div>
   </nav>
 
-  <!-- ══════════ HERO ══════════ -->
-  <section id="hero">
-    <div id="particles"></div>
-    <div class="hero-container">
-      <div class="hero-content">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Fatima <span class="gradient-text">Fayyaz</span></h1>
-        <h2 class="hero-title">
-          <span id="typed-text"></span><span class="typing-cursor">|</span>
-        </h2>
-        <p class="hero-tagline">
-          Mathematics graduate building full-stack mobile apps, AI-powered tools,
-          and data-driven dashboards. Turning complex problems into elegant solutions.
+  <!-- HERO SECTION -->
+  <header id="hero" class="hero-section">
+    <div class="hero-grid">
+      <div class="hero-text-content">
+        <p class="eyebrow reveal-up">PORTFOLIO // 2026</p>
+        <h1 class="massive-title reveal-up" style="transition-delay: 0.1s;">
+          <span class="outline-text">THE ART OF</span><br>
+          <span class="yellow-text">DATA</span><br>
+          SCIENCE
+        </h1>
+        <div class="hero-roles reveal-up" style="transition-delay: 0.2s;">
+          <p>I am a <span id="typed-text" class="purple-text"></span><span class="typing-cursor">|</span></p>
+          <p class="minimal-desc">Translating complex numbers into beautiful, actionable realities.</p>
+        </div>
+      </div>
+      <div class="hero-visual reveal-scale">
+        <div class="image-frame">
+          <img src="assets/images/fatima.jpg" alt="Fatima Fayyaz">
+          <div class="frame-accent top-left"></div>
+          <div class="frame-accent bottom-right"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-marquee">
+      <div class="marquee-content">
+        <span>DATA SCIENTIST</span> <span class="separator">/</span>
+        <span>ML ENGINEER</span> <span class="separator">/</span>
+        <span>AI ENTHUSIAST</span> <span class="separator">/</span>
+        <span>DATA SCIENTIST</span> <span class="separator">/</span>
+        <span>ML ENGINEER</span> <span class="separator">/</span>
+        <span>AI ENTHUSIAST</span> <span class="separator">/</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- VIDEO SECTION -->
+  <section id="video" class="video-section">
+    <div class="section-header reveal-up">
+      <h2 class="huge-heading">PRESS <span class="yellow-text">PLAY</span></h2>
+      <p class="sub-heading">A brief introduction to my work and vision.</p>
+    </div>
+    
+    <div class="video-wrapper reveal-scale">
+      <!-- You can replace this src with your actual YouTube embed link -->
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=1" 
+              title="Professional Intro" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+      <div class="video-overlay">
+        <div class="play-button"><i class="fas fa-play"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & SKILLS (EDITORIAL LAYOUT) -->
+  <section id="about" class="about-section">
+    <div class="about-grid">
+      <div class="about-typography reveal-left">
+        <h2 class="huge-heading">NOT AS<br><span class="outline-text">ACCESSIBLE</span></h2>
+        <p class="highlight-text">Until we make it so.</p>
+      </div>
+      <div class="about-copy reveal-right">
+        <p class="body-large">
+          Mathematics graduate from NUST. I specialize in the intersection of <span class="yellow-text">artificial intelligence</span>, data visualization, and product engineering. 
         </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Get In Touch
-          </a>
-          <a href="#projects" class="btn btn-outline">
-            <i class="fas fa-code"></i> View Projects
-          </a>
-        </div>
-        <div class="hero-socials">
-          <a href="https://github.com/FatimaFayyaz5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/fatima-fayyaz-nust" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:fatimafayyazn22@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="tel:+923318887702" aria-label="Phone"><i class="fas fa-phone"></i></a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="image-ring">
-          <img src="assets/images/fatima.jpg" alt="Fatima Fayyaz" loading="eager">
-        </div>
-      </div>
-    </div>
-    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-      <i class="fas fa-chevron-down"></i>
-    </a>
-  </section>
-
-  <!-- ══════════ ABOUT ══════════ -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title fade-in">About <span class="gradient-text">Me</span></h2>
-      <div class="about-grid">
-        <div class="about-text fade-in">
-          <p>
-            I'm a <strong>Mathematics graduate from NUST</strong> (National University of Sciences & Technology)
-            with a Data Science elective track. I combine a strong mathematical foundation — linear algebra,
-            probability, optimisation — with practical engineering skills to build real products.
-          </p>
-          <p>
-            I've shipped a <strong>production Flutter app</strong> backed by Supabase with real-time geospatial
-            driver matching, built a <strong>RAG chatbot</strong> with admin-updatable knowledge for a live
-            company website, and modelled <strong>2.5 years of transaction data</strong> into interactive
-            executive dashboards. I believe in learning by building — every project in my portfolio solves
-            a real problem.
-          </p>
-          <p>
-            Beyond code, I've led 5 technical teams at Google DSC NUST and managed HR operations
-            across multiple student clubs — I care about people as much as technology.
-          </p>
-        </div>
-        <div class="about-stats fade-in">
-          <div class="stat-card">
-            <span class="counter" data-target="6">0</span><span class="stat-plus">+</span>
-            <p>Projects</p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-num">06</span>
+            <span class="stat-label">Major Projects</span>
           </div>
-          <div class="stat-card">
-            <span class="counter" data-target="3">0</span><span class="stat-plus">+</span>
-            <p>Certifications</p>
+          <div class="stat-item">
+            <span class="stat-num">03</span>
+            <span class="stat-label">Leadership Roles</span>
           </div>
-          <div class="stat-card">
-            <span class="counter" data-target="3">0</span><span class="stat-plus">+</span>
-            <p>Leadership Roles</p>
-          </div>
+        </div>
+        
+        <div class="skills-list">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Machine Learning</span>
+          <span class="skill-pill">RAG Pipelines</span>
+          <span class="skill-pill">Power BI & DAX</span>
+          <span class="skill-pill">SQL / PostGIS</span>
+          <span class="skill-pill">Prompt Engineering</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ SKILLS ══════════ -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="section-title fade-in">My <span class="gradient-text">Skills</span></h2>
-      <div class="skills-grid">
+  <!-- PROJECTS CATALOGUE -->
+  <section id="projects" class="catalogue-section">
+    <div class="section-header reveal-up">
+      <h2 class="huge-heading">SELECTED <span class="purple-text">WORKS</span></h2>
+    </div>
 
-        <div class="skill-card fade-in" data-color="#E91E63">
-          <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-          <h3>Mobile & Web</h3>
-          <div class="skill-tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Dart</span>
-            <span class="tag">Provider</span>
-            <span class="tag">HTML/CSS/JS</span>
-            <span class="tag">Responsive Design</span>
+    <div class="catalogue-list">
+      
+      <!-- Project 01 -->
+      <div class="catalogue-item reveal-up">
+        <div class="cat-number">01</div>
+        <div class="cat-details">
+          <h3 class="cat-title">WInDrive</h3>
+          <p class="cat-desc">Women-Only Ride-Hailing Platform. PostGIS driver matching, offline-first architecture, $0/month scale.</p>
+          <div class="cat-tags">
+            <span>Flutter</span><span>Supabase</span><span>PostGIS</span>
           </div>
         </div>
-
-        <div class="skill-card fade-in" data-color="#8B5CF6">
-          <div class="skill-icon"><i class="fas fa-robot"></i></div>
-          <h3>AI & LLMs</h3>
-          <div class="skill-tags">
-            <span class="tag">RAG Pipelines</span>
-            <span class="tag">Prompt Engineering</span>
-            <span class="tag">TF-IDF</span>
-            <span class="tag">Groq API</span>
-            <span class="tag">Gemini API</span>
-            <span class="tag">Cosine Similarity</span>
-          </div>
+        <div class="cat-action">
+          <a href="https://windrive.vercel.app" target="_blank" class="circle-btn"><i class="fas fa-arrow-right"></i></a>
         </div>
-
-        <div class="skill-card fade-in" data-color="#06B6D4">
-          <div class="skill-icon"><i class="fas fa-code"></i></div>
-          <h3>Programming</h3>
-          <div class="skill-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Dart</span>
-            <span class="tag">SQL</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">Git</span>
-            <span class="tag">GitHub Actions</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-in" data-color="#F59E0B">
-          <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-          <h3>Data & BI</h3>
-          <div class="skill-tags">
-            <span class="tag">Power BI</span>
-            <span class="tag">DAX</span>
-            <span class="tag">Power Query</span>
-            <span class="tag">Star Schema</span>
-            <span class="tag">Data Visualisation</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-in" data-color="#10B981">
-          <div class="skill-icon"><i class="fas fa-server"></i></div>
-          <h3>Backend & DevOps</h3>
-          <div class="skill-tags">
-            <span class="tag">Supabase</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">PostGIS</span>
-            <span class="tag">REST APIs</span>
-            <span class="tag">Vercel</span>
-            <span class="tag">CI/CD</span>
-            <span class="tag">RLS</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-in" data-color="#EC4899">
-          <div class="skill-icon"><i class="fas fa-brain"></i></div>
-          <h3>Foundations</h3>
-          <div class="skill-tags">
-            <span class="tag">Linear Algebra</span>
-            <span class="tag">Probability</span>
-            <span class="tag">Statistics</span>
-            <span class="tag">Numerical Optimisation</span>
-            <span class="tag">DSA</span>
-          </div>
-        </div>
-
+        <div class="cat-hover-image" style="background-color: #E91E63;">🦋</div>
       </div>
+
+      <!-- Project 02 -->
+      <div class="catalogue-item reveal-up">
+        <div class="cat-number">02</div>
+        <div class="cat-details">
+          <h3 class="cat-title">Mind Power Artists</h3>
+          <p class="cat-desc">AI Knowledge Chatbot. RAG pipeline feeding TF-IDF retrieval to ground LLM answers in live company data.</p>
+          <div class="cat-tags">
+            <span>Python</span><span>RAG</span><span>Groq API</span>
+          </div>
+        </div>
+        <div class="cat-action">
+          <a href="#" class="circle-btn"><i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="cat-hover-image" style="background-color: #8B5CF6;">🤖</div>
+      </div>
+
+      <!-- Project 03 -->
+      <div class="catalogue-item reveal-up">
+        <div class="cat-number">03</div>
+        <div class="cat-details">
+          <h3 class="cat-title">AdventureWorks BI</h3>
+          <p class="cat-desc">Executive Analytics Dashboard. 13-table star schema modelling 2.5 years of $24.9M transaction data.</p>
+          <div class="cat-tags">
+            <span>Power BI</span><span>DAX</span><span>Star Schema</span>
+          </div>
+        </div>
+        <div class="cat-action">
+          <a href="#" class="circle-btn"><i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="cat-hover-image" style="background-color: #F59E0B;">📊</div>
+      </div>
+
+      <!-- Project 04 -->
+      <div class="catalogue-item reveal-up">
+        <div class="cat-number">04</div>
+        <div class="cat-details">
+          <h3 class="cat-title">ML Research</h3>
+          <p class="cat-desc">Supervised and unsupervised learning models focusing on feature engineering and evaluation metrics.</p>
+          <div class="cat-tags">
+            <span>Python</span><span>Scikit-Learn</span><span>Pandas</span>
+          </div>
+        </div>
+        <div class="cat-action">
+          <a href="#" class="circle-btn"><i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="cat-hover-image" style="background-color: #06B6D4;">🔬</div>
+      </div>
+
+      <!-- Project 05 -->
+      <div class="catalogue-item reveal-up">
+        <div class="cat-number">05</div>
+        <div class="cat-details">
+          <h3 class="cat-title">UX Case Study</h3>
+          <p class="cat-desc">Product design from information architecture to hi-fi interactive prototypes based on design principles.</p>
+          <div class="cat-tags">
+            <span>UX Design</span><span>Wireframing</span><span>Prototyping</span>
+          </div>
+        </div>
+        <div class="cat-action">
+          <a href="#" class="circle-btn"><i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="cat-hover-image" style="background-color: #EC4899;">📱</div>
+      </div>
+
+      <!-- Project 06 -->
+      <div class="catalogue-item reveal-up">
+        <div class="cat-number">06</div>
+        <div class="cat-details">
+          <h3 class="cat-title">DSA Portfolio</h3>
+          <p class="cat-desc">100+ data structures and algorithms problems solved with time/space complexity analysis.</p>
+          <div class="cat-tags">
+            <span>Algorithms</span><span>Data Structures</span><span>Python</span>
+          </div>
+        </div>
+        <div class="cat-action">
+          <a href="#" class="circle-btn"><i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="cat-hover-image" style="background-color: #10B981;">⚡</div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ══════════ PROJECTS ══════════ -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title fade-in">Featured <span class="gradient-text">Projects</span></h2>
-      <p class="section-subtitle fade-in">Real projects that solve real problems — built, tested, and deployed.</p>
-      <div class="projects-grid">
-
-        <!-- Project 1: WInDrive -->
-        <div class="project-card featured fade-in">
-          <div class="project-accent" style="background: linear-gradient(90deg, #E91E63, #8B2C7F);"></div>
-          <div class="project-image">
-            <span class="project-emoji">🦋</span>
-            <span class="project-badge">Featured</span>
-          </div>
-          <div class="project-content">
-            <h3>WInDrive — Women-Only Ride-Hailing</h3>
-            <p>
-              Full-stack Flutter app for women's safe transportation in Pakistan.
-              Real-time geospatial driver matching via PostGIS, OSRM routing,
-              offline-first architecture, and a hold-to-activate SOS system.
-              7-table PostgreSQL schema with 14 RLS policies. Runs at $0/month.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Flutter</span>
-              <span class="tag">Dart</span>
-              <span class="tag">Supabase</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">PostGIS</span>
-              <span class="tag">Vercel</span>
-            </div>
-            <div class="project-links">
-              <a href="https://windrive.vercel.app" target="_blank" class="btn btn-small btn-primary">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/FatimaFayyaz5/WInDrive" target="_blank" class="btn btn-small btn-outline">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: AI Chatbot -->
-        <div class="project-card featured fade-in">
-          <div class="project-accent" style="background: linear-gradient(90deg, #8B5CF6, #06B6D4);"></div>
-          <div class="project-image">
-            <span class="project-emoji">🤖</span>
-            <span class="project-badge">Featured</span>
-          </div>
-          <div class="project-content">
-            <h3>Mind Power Artists — AI Knowledge Chatbot</h3>
-            <p>
-              RAG chatbot for a live company website. Scraped services, courses,
-              FAQs, and policies into a 36-entry knowledge base. TF-IDF retrieval
-              feeds matched context to an LLM that answers grounded in source
-              material only. Admin panel for non-technical staff updates.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Streamlit</span>
-              <span class="tag">Groq API</span>
-              <span class="tag">RAG</span>
-              <span class="tag">TF-IDF</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="btn btn-small btn-primary">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/FatimaFayyaz5" target="_blank" class="btn btn-small btn-outline">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: Power BI Dashboard -->
-        <div class="project-card fade-in">
-          <div class="project-accent" style="background: linear-gradient(90deg, #F59E0B, #EF4444);"></div>
-          <div class="project-image">
-            <span class="project-emoji">📊</span>
-          </div>
-          <div class="project-content">
-            <h3>AdventureWorks Executive Analytics</h3>
-            <p>
-              Modelled 13 tables into a star schema over 2.5 years of transactions
-              ($24.9M revenue, 25.2K orders, 17.4K customers). Built 7 interactive
-              dashboard pages including executive KPIs, geographic map, and
-              customer segmentation. Surfaced return-rate outliers at 3.3%.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Power BI</span>
-              <span class="tag">DAX</span>
-              <span class="tag">Power Query</span>
-              <span class="tag">Star Schema</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="btn btn-small btn-outline">
-                <i class="fas fa-images"></i> View Dashboard
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Placeholder -->
-        <div class="project-card fade-in">
-          <div class="project-accent" style="background: linear-gradient(90deg, #10B981, #06B6D4);"></div>
-          <div class="project-image">
-            <span class="project-emoji">🔬</span>
-          </div>
-          <div class="project-content">
-            <h3>Machine Learning Research Project</h3>
-            <p>
-              Applying machine learning models to real-world datasets with a focus
-              on feature engineering, model selection, and evaluation metrics.
-              Exploring supervised and unsupervised learning techniques from
-              the DeepLearning.AI specialization.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Scikit-Learn</span>
-              <span class="tag">Pandas</span>
-              <span class="tag">NumPy</span>
-            </div>
-            <div class="project-links">
-              <span class="coming-soon">Coming Soon</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: Placeholder -->
-        <div class="project-card fade-in">
-          <div class="project-accent" style="background: linear-gradient(90deg, #EC4899, #F59E0B);"></div>
-          <div class="project-image">
-            <span class="project-emoji">📱</span>
-          </div>
-          <div class="project-content">
-            <h3>UX Case Study — Product Design</h3>
-            <p>
-              End-to-end product design: information architecture across multiple
-              modules, complete user flows, wireframes from lo-fi to hi-fi
-              interactive prototypes, and UX annotations mapped to established
-              design principles. Competitor analysis included.
-            </p>
-            <div class="project-tags">
-              <span class="tag">UX Design</span>
-              <span class="tag">Wireframing</span>
-              <span class="tag">Prototyping</span>
-              <span class="tag">User Research</span>
-            </div>
-            <div class="project-links">
-              <span class="coming-soon">Coming Soon</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6: Placeholder -->
-        <div class="project-card fade-in">
-          <div class="project-accent" style="background: linear-gradient(90deg, #06B6D4, #8B5CF6);"></div>
-          <div class="project-image">
-            <span class="project-emoji">⚡</span>
-          </div>
-          <div class="project-content">
-            <h3>DSA Problem-Solving Portfolio</h3>
-            <p>
-              100+ data structures and algorithms problems solved on AlgoExpert
-              spanning arrays, trees, graphs, dynamic programming, and system
-              design. Solutions documented with time/space complexity analysis
-              and multiple approaches per problem.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Algorithms</span>
-              <span class="tag">Data Structures</span>
-              <span class="tag">Problem Solving</span>
-              <span class="tag">Python</span>
-            </div>
-            <div class="project-links">
-              <span class="coming-soon">Coming Soon</span>
-            </div>
-          </div>
-        </div>
-
+  <!-- CONTACT -->
+  <footer id="contact" class="editorial-footer reveal-up">
+    <div class="footer-huge-text">
+      <h2>LET'S <span class="purple-text">TALK</span></h2>
+    </div>
+    <div class="footer-content">
+      <div class="contact-info">
+        <a href="mailto:fatimafayyazn22@gmail.com" class="contact-link">fatimafayyazn22@gmail.com</a>
+        <a href="tel:+923318887702" class="contact-link">+92 331 888 7702</a>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/fatima-fayyaz-nust" target="_blank" data-hover="LINKEDIN">LINKEDIN</a>
+        <a href="https://github.com/FatimaFayyaz5" target="_blank" data-hover="GITHUB">GITHUB</a>
       </div>
     </div>
-  </section>
-
-  <!-- ══════════ EXPERIENCE ══════════ -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2 class="section-title fade-in">Leadership <span class="gradient-text">Experience</span></h2>
-      <div class="timeline">
-
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Strategy Lead</h3>
-              <span class="timeline-date">Oct 2023 — Sep 2024</span>
-            </div>
-            <p class="timeline-org"><i class="fab fa-google"></i> Google Developer Student Club, NUST</p>
-            <ul>
-              <li>Managed 5 technical teams: AI/Data, Cloud, Game Dev, Web Dev, and Think Tank</li>
-              <li>Interviewed 50+ candidates and administered 50 DataCamp licences with utilisation tracking</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>HR Team Lead</h3>
-              <span class="timeline-date">Sep 2023 — Sep 2024</span>
-            </div>
-            <p class="timeline-org"><i class="fas fa-laptop-code"></i> Hack Club NUST</p>
-            <ul>
-              <li>Interviewed 25+ candidates and shortlisted 10 HR Executives</li>
-              <li>Previously served as HR Executive managing a 7-person admin events team (Oct 2022 — Sep 2023)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>HR Executive</h3>
-              <span class="timeline-date">Sep 2023 — Jun 2024</span>
-            </div>
-            <p class="timeline-org"><i class="fas fa-microchip"></i> NUST IEEE Club</p>
-            <ul>
-              <li>Managed a 9-person decor portfolio team</li>
-              <li>Tracked attendance, circulated announcements, and reported performance to directors</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ EDUCATION ══════════ -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2 class="section-title fade-in">Education & <span class="gradient-text">Certifications</span></h2>
-      <div class="edu-grid">
-
-        <div class="edu-card fade-in">
-          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-          <h3>B.S. Mathematics</h3>
-          <p class="edu-org">National University of Sciences & Technology (NUST)</p>
-          <p class="edu-date">Sep 2022 — Aug 2026 · Islamabad, Pakistan</p>
-          <p class="edu-track">Data Science elective track</p>
-          <div class="edu-courses">
-            <span class="tag">Machine Learning (A)</span>
-            <span class="tag">Probability & Stats (A)</span>
-            <span class="tag">Linear Algebra (A)</span>
-            <span class="tag">Numerical Optimisation (A)</span>
-            <span class="tag">Databases (A)</span>
-            <span class="tag">DSA (A)</span>
-            <span class="tag">Information Visualisation (A)</span>
-          </div>
-        </div>
-
-        <div class="certs-container fade-in">
-          <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-            <h4>Machine Learning Specialization</h4>
-            <p>DeepLearning.AI & Stanford Online — Coursera</p>
-            <span class="cert-status in-progress">In Progress</span>
-          </div>
-          <div class="cert-card">
-            <div class="cert-icon"><i class="fab fa-google"></i></div>
-            <h4>Google Data Analytics Professional</h4>
-            <p>Google — Coursera</p>
-            <span class="cert-status completed">Completed</span>
-          </div>
-          <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-code"></i></div>
-            <h4>Programming Expert</h4>
-            <p>AlgoExpert — 100 DSA problems</p>
-            <span class="cert-status completed">Completed</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ CONTACT ══════════ -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title fade-in">Get In <span class="gradient-text">Touch</span></h2>
-      <p class="section-subtitle fade-in">I'm currently looking for new opportunities. Feel free to reach out!</p>
-      <div class="contact-card fade-in">
-        <div class="contact-grid">
-          <a href="mailto:fatimafayyazn22@gmail.com" class="contact-item">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <h4>Email</h4>
-            <p>fatimafayyazn22@gmail.com</p>
-          </a>
-          <a href="tel:+923318887702" class="contact-item">
-            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-            <h4>Phone</h4>
-            <p>+92 331 888 7702</p>
-          </a>
-          <a href="https://linkedin.com/in/fatima-fayyaz-nust" target="_blank" class="contact-item">
-            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-            <h4>LinkedIn</h4>
-            <p>fatima-fayyaz-nust</p>
-          </a>
-          <a href="https://github.com/FatimaFayyaz5" target="_blank" class="contact-item">
-            <div class="contact-icon"><i class="fab fa-github"></i></div>
-            <h4>GitHub</h4>
-            <p>FatimaFayyaz5</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ FOOTER ══════════ -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-logo">F<span class="accent">.</span></p>
-        <p>&copy; 2026 Fatima Fayyaz. Crafted with <span class="accent">&hearts;</span> in Islamabad.</p>
-        <div class="footer-socials">
-          <a href="https://github.com/FatimaFayyaz5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/fatima-fayyaz-nust" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:fatimafayyazn22@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FATIMA FAYYAZ. ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
 
