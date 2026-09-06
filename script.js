@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const cursorDot = document.querySelector('.cursor-dot');
     const cursorOutline = document.querySelector('.cursor-outline');
     
-    // Only apply if not on touch device (rudimentary check via screen width or if cursor elements exist)
     if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
         window.addEventListener('mousemove', (e) => {
             const posX = e.clientX;
@@ -12,20 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
             cursorDot.style.left = `${posX}px`;
             cursorDot.style.top = `${posY}px`;
 
-            // Add a slight delay to the outline for a trailing effect
             cursorOutline.animate({
                 left: `${posX}px`,
                 top: `${posY}px`
             }, { duration: 500, fill: "forwards" });
         });
 
-        // Add hover effects for clickable elements
-        const clickables = document.querySelectorAll('a, button, .circle-btn, .play-button');
+        const clickables = document.querySelectorAll('a, button, .catalog-btn, .play-button');
         clickables.forEach(el => {
             el.addEventListener('mouseenter', () => {
                 cursorOutline.style.width = '60px';
                 cursorOutline.style.height = '60px';
-                cursorOutline.style.backgroundColor = 'rgba(255, 215, 0, 0.1)';
+                cursorOutline.style.backgroundColor = 'rgba(173, 62, 77, 0.1)';
             });
             el.addEventListener('mouseleave', () => {
                 cursorOutline.style.width = '40px';
@@ -35,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Typing Effect (Updated Strings)
+    // 2. Typing Effect
     const typedTextSpan = document.querySelector('#typed-text');
     if (typedTextSpan) {
-        const textArray = ['DATA SCIENTIST', 'ML ENGINEER', 'AI ENTHUSIAST', 'VISIONARY', 'VISIONARY'];
+        const textArray = ['DATA SCIENTIST', 'ML ENGINEER', 'AI ENTHUSIAST', 'VISIONARY'];
         const typingDelay = 100;
         const erasingDelay = 50;
         const newTextDelay = 2000;
@@ -66,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(type, typingDelay + 500);
             }
         }
-        // Start typing after initial load delay
         setTimeout(type, 1500);
     }
 
@@ -86,24 +82,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Scroll Reveal Animations (Intersection Observer)
+    // 4. Scroll Reveal Animations (Intersection Observer - NEW SYSTEM)
     const observerOptions = {
-        root: null,
-        rootMargin: '0px 0px -100px 0px',
-        threshold: 0.1
+        threshold: 0.2,
+        rootMargin: "0px 0px -10% 0px"
     };
 
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                // Optional: stop observing once revealed
-                // obs.unobserve(entry.target);
+                entry.target.classList.add('is-revealed');
+                obs.unobserve(entry.target); // Trigger ONCE and never replay
             }
         });
     }, observerOptions);
 
-    const revealElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale');
-    revealElements.forEach(el => observer.observe(el));
+    // Observe all triggers
+    document.querySelectorAll('.reveal, .fade-up-group, .fade-up:not(.fade-up-group .fade-up), .zoom-wrapper').forEach(el => {
+        observer.observe(el);
+    });
 });
-

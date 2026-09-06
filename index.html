@@ -7,7 +7,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <link rel="stylesheet" href="style.css">
@@ -20,7 +20,7 @@
 
   <!-- NAVIGATION -->
   <nav class="editorial-nav">
-    <div class="nav-brand">FATIMA<span class="yellow-text">.</span></div>
+    <div class="nav-brand">FATIMA<span class="accent-text">.</span></div>
     <ul class="nav-links">
       <li><a href="#hero" data-hover="HOME">HOME</a></li>
       <li><a href="#skills" data-hover="SKILLS">SKILLS</a></li>
@@ -34,21 +34,21 @@
   <header id="hero" class="hero-section">
     <div class="hero-grid">
       <div class="hero-text-content">
-        <p class="eyebrow reveal-up">PORTFOLIO // 2026</p>
+        <p class="eyebrow fade-up" style="--i: 0">PORTFOLIO // 2026</p>
         
-        <h1 class="massive-title reveal-up" style="transition-delay: 0.1s;">
-          <span class="outline-text">FATIMA</span><br>
-          <span class="yellow-text">FAYYAZ.</span>
+        <h1 class="massive-title reveal">
+          <span class="line"><span class="line-inner" style="--i: 0"><span class="outline-text">FATIMA</span></span></span>
+          <span class="line"><span class="line-inner" style="--i: 1"><span class="accent-text">FAYYAZ.</span></span></span>
         </h1>
         
-        <div class="hero-roles reveal-up" style="transition-delay: 0.2s;">
-          <h2 class="hero-subtitle">DATA SCIENTIST & ML ENGINEER</h2>
-          <p class="minimal-desc">I engineer complex data into intelligent, scalable solutions that drive real-world impact. <br><br><span style="color: var(--accent-yellow);">Scroll to open the catalog ↓</span></p>
+        <div class="hero-roles fade-up-group">
+          <h2 class="hero-subtitle fade-up" style="--i: 0">DATA SCIENTIST & ML ENGINEER</h2>
+          <p class="minimal-desc fade-up" style="--i: 1">I engineer complex data into intelligent, scalable solutions that drive real-world impact. <br><br><span style="color: var(--accent-color);">Scroll to open the catalog ↓</span></p>
         </div>
       </div>
-      <div class="hero-visual reveal-scale">
+      <div class="hero-visual zoom-wrapper">
         <div class="image-frame">
-          <img src="assets/images/fatima.jpg" alt="Fatima Fayyaz">
+          <img src="assets/images/fatima.jpg" alt="Fatima Fayyaz" class="zoom-image">
           <div class="frame-accent top-left"></div>
           <div class="frame-accent bottom-right"></div>
         </div>
@@ -61,12 +61,14 @@
     
     <!-- VIDEO SECTION -->
     <section id="video" class="magazine-section video-section">
-      <div class="section-header reveal-up">
-        <h2 class="magazine-heading">PRESS <span class="highlight-yellow">PLAY</span></h2>
-        <p class="magazine-sub">A brief introduction to my work and vision.</p>
+      <div class="section-header">
+        <h2 class="magazine-heading reveal">
+          <span class="line"><span class="line-inner" style="--i: 0">PRESS <span class="highlight-accent">PLAY</span></span></span>
+        </h2>
+        <p class="magazine-sub fade-up">A brief introduction to my work and vision.</p>
       </div>
       
-      <div class="video-wrapper reveal-scale">
+      <div class="video-wrapper fade-up">
         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=1" 
                 title="Professional Intro" 
                 frameborder="0" 
@@ -81,12 +83,14 @@
 
     <!-- SKILLS SECTION -->
     <section id="skills" class="magazine-section skills-section">
-      <div class="section-header reveal-up">
-        <h2 class="magazine-heading">TECHNICAL <span class="highlight-yellow">ARSENAL</span></h2>
+      <div class="section-header">
+        <h2 class="magazine-heading reveal">
+          <span class="line"><span class="line-inner" style="--i: 0">TECHNICAL <span class="highlight-accent">ARSENAL</span></span></span>
+        </h2>
       </div>
-      <div class="skills-catalog-grid">
+      <div class="skills-catalog-grid fade-up-group">
         <!-- Skill 1 -->
-        <div class="catalog-skill-card reveal-up">
+        <div class="catalog-skill-card fade-up" style="--i: 0">
           <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
           <h3>Mobile & Web</h3>
           <div class="skill-tags">
@@ -97,7 +101,7 @@
           </div>
         </div>
         <!-- Skill 2 -->
-        <div class="catalog-skill-card reveal-up">
+        <div class="catalog-skill-card fade-up" style="--i: 1">
           <div class="skill-icon"><i class="fas fa-robot"></i></div>
           <h3>AI & LLMs</h3>
           <div class="skill-tags">
@@ -108,7 +112,7 @@
           </div>
         </div>
         <!-- Skill 3 -->
-        <div class="catalog-skill-card reveal-up">
+        <div class="catalog-skill-card fade-up" style="--i: 2">
           <div class="skill-icon"><i class="fas fa-code"></i></div>
           <h3>Programming</h3>
           <div class="skill-tags">
@@ -119,7 +123,7 @@
           </div>
         </div>
         <!-- Skill 4 -->
-        <div class="catalog-skill-card reveal-up">
+        <div class="catalog-skill-card fade-up" style="--i: 3">
           <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
           <h3>Data & BI</h3>
           <div class="skill-tags">
@@ -130,7 +134,7 @@
           </div>
         </div>
         <!-- Skill 5 -->
-        <div class="catalog-skill-card reveal-up">
+        <div class="catalog-skill-card fade-up" style="--i: 4">
           <div class="skill-icon"><i class="fas fa-server"></i></div>
           <h3>Backend</h3>
           <div class="skill-tags">
@@ -141,7 +145,7 @@
           </div>
         </div>
         <!-- Skill 6 -->
-        <div class="catalog-skill-card reveal-up">
+        <div class="catalog-skill-card fade-up" style="--i: 5">
           <div class="skill-icon"><i class="fas fa-brain"></i></div>
           <h3>Foundations</h3>
           <div class="skill-tags">
@@ -156,14 +160,16 @@
 
     <!-- PROJECTS SECTION (CATALOG STYLE) -->
     <section id="projects" class="magazine-section projects-section">
-      <div class="section-header reveal-up">
-        <h2 class="magazine-heading">SELECTED <span class="highlight-yellow">WORKS</span></h2>
+      <div class="section-header">
+        <h2 class="magazine-heading reveal">
+          <span class="line"><span class="line-inner" style="--i: 0">SELECTED <span class="highlight-accent">WORKS</span></span></span>
+        </h2>
       </div>
 
-      <div class="catalog-layout">
+      <div class="catalog-layout fade-up-group">
         
         <!-- Project 01 -->
-        <div class="catalog-project reveal-up">
+        <div class="catalog-project fade-up" style="--i: 0">
           <div class="catalog-left">
             <div class="catalog-number">01</div>
             <div class="catalog-visual">🦋</div>
@@ -180,7 +186,7 @@
         </div>
 
         <!-- Project 02 -->
-        <div class="catalog-project reveal-up">
+        <div class="catalog-project fade-up" style="--i: 1">
           <div class="catalog-left">
             <div class="catalog-number">02</div>
             <div class="catalog-visual">🤖</div>
@@ -197,7 +203,7 @@
         </div>
 
         <!-- Project 03 -->
-        <div class="catalog-project reveal-up">
+        <div class="catalog-project fade-up" style="--i: 2">
           <div class="catalog-left">
             <div class="catalog-number">03</div>
             <div class="catalog-visual">📊</div>
@@ -214,7 +220,7 @@
         </div>
 
         <!-- Project 04 -->
-        <div class="catalog-project reveal-up">
+        <div class="catalog-project fade-up" style="--i: 3">
           <div class="catalog-left">
             <div class="catalog-number">04</div>
             <div class="catalog-visual">🔬</div>
@@ -236,17 +242,18 @@
   </div> <!-- End Magazine Wrapper -->
 
   <!-- BACK COVER FOOTER -->
-  <footer id="contact" class="back-cover-footer reveal-up">
+  <footer id="contact" class="back-cover-footer fade-up-group">
     <div class="footer-grid">
       <div class="footer-left">
-        <h2 class="magazine-heading-white">LET'S <span class="highlight-yellow">TALK</span></h2>
-        <p class="footer-desc">Open for opportunities, collaborations, and conversations.</p>
+        <h2 class="magazine-heading-white reveal">
+          <span class="line"><span class="line-inner" style="--i: 0">LET'S <span class="highlight-accent">TALK</span></span></span>
+        </h2>
+        <p class="footer-desc fade-up" style="--i: 1">Open for opportunities, collaborations, and conversations.</p>
       </div>
       <div class="footer-right">
-        <div class="contact-card">
+        <div class="contact-card fade-up" style="--i: 2">
           <div class="contact-item">
             <i class="fas fa-envelope icon-accent"></i>
-            <!-- Email is now in lowercase as requested -->
             <a href="mailto:fatimafayyazn22@gmail.com" class="lowercase-email">fatimafayyazn22@gmail.com</a>
           </div>
           <div class="social-icons-row">
@@ -257,7 +264,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom fade-up" style="--i: 3">
       <p>&copy; 2026 Fatima Fayyaz. All Rights Reserved.</p>
     </div>
   </footer>
